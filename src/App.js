@@ -1,28 +1,31 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Player from "./components/Player";
+import StationChooser from "./components/StationChooser";
+import "./App.css";
+
+import stations from "./stations";
 
 class App extends Component {
+  state = {
+    currentStation: stations[5]
+  };
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <React.Fragment>
+        <Player station={this.state.currentStation} />
+        <StationChooser
+          stations={stations}
+          currentStation={this.state.currentStation}
+          onStationChange={this.handleStationChange}
+        />
+      </React.Fragment>
     );
   }
+
+  handleStationChange = e => {
+    this.setState({ currentStation: stations[e.target.getAttribute("index")] });
+  };
 }
 
 export default App;
