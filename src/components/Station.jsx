@@ -2,7 +2,12 @@ import React, { Component } from "react";
 
 const styles = {
   icon: {
-    height: 50
+    height: 100,
+    padding: 10
+  },
+  name: {
+    marginLeft: 10,
+    fontWeight: "bold"
   }
 };
 
@@ -16,7 +21,8 @@ class Station extends Component {
         onClick={this.props.onClick}
         index={this.props.index}
       >
-        {this.props.streamTitle}
+        <img height="100%" src={`/img/${this.props.port}.png`} />
+        <span style={styles.name}>{this.props.streamTitle}</span>
       </div>
     );
   }

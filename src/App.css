@@ -1,3 +1,7 @@
+* {
+  font-family: "Avenir Next", sans-serif;
+}
+
 .selected {
-  background: #0000ff;
+  background: #ddd;
 }

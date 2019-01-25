@@ -24,7 +24,9 @@ class App extends Component {
   }
 
   handleStationChange = e => {
-    this.setState({ currentStation: stations[e.target.getAttribute("index")] });
+    this.setState({
+      currentStation: stations[e.currentTarget.getAttribute("index")]
+    });
   };
 }
 

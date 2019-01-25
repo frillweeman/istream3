@@ -10,9 +10,7 @@ const styles = {
 };
 
 class Player extends Component {
-  state = {
-    audioURL: ""
-  };
+  state = {};
 
   render() {
     return (
