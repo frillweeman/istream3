@@ -5,3 +5,7 @@
 .selected {
   background: #ddd;
 }
+
+.container {
+  text-align: left;
+}

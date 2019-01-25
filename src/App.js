@@ -12,14 +12,15 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div style={{ textAlign: "center" }}>
+        <img height="80" style={{ margin: "10px 0" }} src="/img/mixhits.png" />
         <Player station={this.state.currentStation} />
         <StationChooser
           stations={stations}
           currentStation={this.state.currentStation}
           onStationChange={this.handleStationChange}
         />
-      </React.Fragment>
+      </div>
     );
   }
 
