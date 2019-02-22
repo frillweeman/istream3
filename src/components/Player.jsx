@@ -4,10 +4,17 @@ const styles = {
   div: {
     width: "50%",
     margin: "auto",
-    marginBottom: 20,
+    marginTop: "2.3em",
+    marginBottom: "2.3em",
     textAlign: "center",
     color: "#fff"
-  }
+  },
+  nowPlaying: {
+    fontWeight: "bold",
+    fontSize: "1.7em",
+    textTransform: "uppercase"
+  },
+  stationTitle: {}
 };
 
 class Player extends Component {
@@ -16,8 +23,8 @@ class Player extends Component {
   render() {
     return (
       <div style={styles.div}>
-        <h2>Now Playing</h2>
-        <h1> {this.props.station.streamTitle} </h1>
+        <h2 style={styles.nowPlaying}>Now Playing</h2>
+        <h1 style={styles.stationTitle}> {this.props.station.streamTitle} </h1>
         <audio
           autoPlay
           ref="audio"
