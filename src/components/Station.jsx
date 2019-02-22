@@ -7,7 +7,8 @@ const styles = {
   },
   name: {
     marginLeft: 10,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    color: "white"
   }
 };
 

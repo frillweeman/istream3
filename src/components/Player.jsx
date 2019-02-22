@@ -5,7 +5,8 @@ const styles = {
     width: "50%",
     margin: "auto",
     marginBottom: 20,
-    textAlign: "center"
+    textAlign: "center",
+    color: "#fff"
   }
 };
 
@@ -16,7 +17,7 @@ class Player extends Component {
     return (
       <div style={styles.div}>
         <h2>Now Playing</h2>
-        <h1> {this.props.station.streamTitle}</h1>
+        <h1> {this.props.station.streamTitle} </h1>
         <audio
           autoPlay
           ref="audio"
