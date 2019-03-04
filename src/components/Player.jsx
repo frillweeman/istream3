@@ -2,12 +2,16 @@ import React, { Component } from "react";
 
 const styles = {
   div: {
-    width: "50%",
-    margin: "auto",
-    marginTop: "2.3em",
-    marginBottom: "2.3em",
+    width: "100%",
+    paddingTop: "2.3em",
+    paddingBottom: "0.3em",
+    marginBottom: "2em",
     textAlign: "center",
-    color: "#fff"
+    color: "#fff",
+    position: "sticky",
+    top: 0,
+    background: "#222",
+    zIndex: 5
   },
   nowPlaying: {
     fontWeight: "bold",

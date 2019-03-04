@@ -17,7 +17,7 @@ class Station extends Component {
   render() {
     return (
       <div
-        className={"col-4" + (this.props.isActive ? " selected" : "")}
+        className={"col-md-4 col-sm-12" + (this.props.isActive ? " selected" : "")}
         style={styles.icon}
         onClick={this.props.onClick}
         index={this.props.index}
