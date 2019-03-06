@@ -4,9 +4,13 @@ Frontend web player for Mixhits Radio stations.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Usage
 
 In the project directory, you can run:
+
+### `npm install`
+
+Run this command first to install all dependencies.
 
 ### `npm start`
 
