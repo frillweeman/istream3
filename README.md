@@ -4,6 +4,10 @@ Frontend web player for Mixhits Radio stations.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Setup
+
+Before running this app, you need to run the Python script to obtain a list of up-to-date stations. Simply run `python3 getStations.py`. After this script completes, the file stations.json will be generated and used to populate the list of stations in the web app.
+
 ## Usage
 
 In the project directory, you can run:
